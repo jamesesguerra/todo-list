@@ -102,7 +102,6 @@ const setupEventListeners = () => {
         if (input.value) {
             createTodo(input.value);
             input.value = '';
-            input.focus();
         };
     })
     completedClear.addEventListener('click', () => {
@@ -114,7 +113,6 @@ const setupEventListeners = () => {
         if (e.code == 'Enter') {
             createTodo(input.value);
             input.value = '';
-            input.focus();
         }
     })
 }
